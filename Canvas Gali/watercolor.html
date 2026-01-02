@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watercolor | Canvas Gali</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-navy: #2F4156;
+            --accent-blue: #396291;
+            --light-bg: #F5EFEB; 
+            --white: #ffffff;
+        }
+
+        body { 
+            font-family: 'Source Sans 3', sans-serif; 
+            background: var(--light-bg);
+            color: var(--primary-navy);
+        }
+
+        h1, h2, h3, h5 { 
+            font-family: 'Playfair Display', serif; 
+            color: var(--primary-navy); 
+        }
+
+        .navbar {
+            background: var(--white);
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 24px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-link {
+            color: var(--primary-navy);
+            margin-left: 15px;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: #C8D9E6;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .artwork-card {
+            background: var(--white);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .artwork-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .artwork-card-body {
+            padding: 20px;
+        }
+
+        .artwork-title { 
+            font-size: 1.4rem; 
+            margin-bottom: 5px; 
+        }
+
+        .artwork-artist { 
+            color: var(--accent-blue); 
+            font-weight: 600; 
+            margin-bottom: 10px; 
+        }
+
+        .artwork-desc {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .artwork-price { 
+            font-size: 1.2rem; 
+            font-weight: bold; 
+            color: var(--primary-navy); 
+        }
+
+        .btn-inquire {
+            background-color: var(--primary-navy);
+            color: var(--white);
+            padding: 10px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .btn-inquire:hover {
+            background-color: var(--accent-blue);
+        }
+
+        .intro-section {
+            background: var(--white);
+            padding: 40px 0;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+        }
+
+        footer {
+            background: var(--white);
+            padding: 20px 0;
+            margin-top: 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            Canvas <span style="color: var(--accent-blue);">Gali</span>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html" style="color: var(--accent-blue); font-weight: bold;">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+                <li class="nav-item"><a class="nav-link" href="exhibitions.html">Exhibitions</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <h1>Watercolors</h1>
+        <p>Delicate Transparencies and Luminous Washes</p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="row g-4">
+        
+        <div class="col-md-4">
+            <div class="artwork-card">
+                <img src="water1.jpeg" alt="Lahore Core">
+                <div class="artwork-card-body">
+                    <h3 class="artwork-title">Lahore Core - CityScape</h3>
+                    <p class="artwork-artist">Zahid Ashraf</p>
+                    <p class="artwork-desc">This piece utilizes a grand archway to frame a lively street scene filled with colorful kites.</p>
+                    <p class="artwork-price">PKR 38,000</p>
+                    <a href="login.html" class="btn-inquire">Inquire Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="artwork-card">
+                <img src="water2.jpeg" alt="Lahore Core">
+                <div class="artwork-card-body">
+                    <h3 class="artwork-title">Lahore Core - The Walled City</h3>
+                    <p class="artwork-artist">Zahid Ashraf</p>
+                    <p class="artwork-desc">A focused perspective on a narrow alleyway where the dense network of overhead wires creates texture.</p>
+                    <p class="artwork-price">PKR 45,000</p>
+                    <a href="login.html" class="btn-inquire">Inquire Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="artwork-card">
+                <img src="water3.jpeg" alt="Lahore Core">
+                <div class="artwork-card-body">
+                    <h3 class="artwork-title">Lahore Core</h3>
+                    <p class="artwork-artist">Zahid Ashraf</p>
+                    <p class="artwork-desc">This composition centers on a historic minaret standing tall above the daily commute.</p>
+                    <p class="artwork-price">PKR 35,000</p>
+                    <a href="login.html" class="btn-inquire">Inquire Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="intro-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <p class="text-center">
+                    Watercolor painting is a dance between control and spontaneity, where pigments suspended in water create ethereal washes of color that seem to glow from within. This delicate medium demands both patience and boldness, as artists work with layers of transparent color to build depth and luminosity.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p class="text-muted">© 2025 Canvas Gali — All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

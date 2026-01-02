@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login | Canvas Gali</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+3&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<a class="navbar-brand urdu-logo mx-auto d-table text-dark" href="index.html">کینوس گلی</a>
+<section class="py-5" >
+
+<div class="login-box">
+
+<h3 class="text-center mb-4">Login</h3>
+
+<input class="w-100" type="text" id="username" placeholder="Username ">
+<br><br>
+<input class="w-100" type="password" id="password" placeholder="Password">
+<br><hr>
+<button class="btn-main w-100 mb-3" onclick="login()">Login</button>
+<br>
+<small>Don't have an account? <br> <a style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Get Your Membership Credentials by visiting gallery</a></small> <br><br>
+<p style="margin-bottom: 0; text-align: center;">
+  <a href="index.html" style="color: var(--accent-blue);" > Back to Home</a>
+</p>
+<br>
+<button class="social-btn"><i class="bi bi-google"></i> Login with Google</button>
+<button class="social-btn"><i class="bi bi-facebook"></i> Login with Facebook</button>
+
+</div>
+</section>
+
+<footer>
+<div class="container text-center">
+<p>© 2025 Canvas Gali</p>
+</div>
+</footer>
+
+<script>
+function login(){
+  const u=document.getElementById("username").value;
+  const p=document.getElementById("password").value;
+
+  if(u==="admin" && p==="canvas123"){
+    alert("Login Successful");
+  }else{
+    alert("Invalid Credentials");
+  }
+}
+</script>
+
+</body>
+</html>

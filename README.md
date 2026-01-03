@@ -104,8 +104,3 @@ canvas-gali/
 - [ ] Multi-language support (English/Urdu)
 - [ ] Virtual gallery 3D tours
 - [ ] Social media integration
-
-- AICT Lab instructors for guidance
-
-
-
